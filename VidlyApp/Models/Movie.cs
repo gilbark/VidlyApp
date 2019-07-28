@@ -23,14 +23,13 @@ namespace VidlyApp.Models
         [Display(Name = "Release Date")]
         public DateTime ReleaseDate { get; set; }
 
-        public DateTime? DateAdded
-        {
-            get; set;
-        }
+        public DateTime? DateAdded { get; set; }
 
-        [Range(1,20)]
+        [Range(1, 20)]
         [Display(Name = "Number In Stock")]
         public short NumberInStock { get; set; }
+
+        public short NumberAvailable { get; set; }
 
     }
 }
